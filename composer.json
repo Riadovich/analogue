@@ -1,0 +1,18 @@
+{
+    "name": "makhmudov/analogue",
+    "authors": [
+        {
+            "name": "Magomed",
+            "email": "zaur.and.morda@gmail.com"
+        }
+    ],
+    "require": {},
+
+    "autoload":{
+        "psr-4":{
+            "System\\": "system",
+            "Cms\\": "cms",
+            "Admin\\": "admin"
+        }
+    }
+}

@@ -1,7 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: makhmudov
- * Date: 01.10.2017
- * Time: 21:57
- */
+define("ANALOGUE", true);
+
+define("ROOT_DIR", __DIR__);
+
+require_once "system/bootstrap.php";
