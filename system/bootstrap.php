@@ -5,7 +5,22 @@
  */
 
 require_once __DIR__."/../vendor/autoload.php";
+require_once __DIR__ . "/init.php";
 
-use System\System;
+try{
+    //объект
+    $di = new \System\DI\DI();
 
-System::t();
+    $services = require_once __DIR__."/Include/service.php";
+
+    foreach ($services as $service){
+        $serv = new $service($di);
+        $serv->init();
+    }
+    $system = new \System\System($di);
+    $system->run();
+}
+catch (\Exception $ex){
+
+}
+
