@@ -17,7 +17,14 @@ class View
 
         ob_start();
         extract($vars);
-        require_once $file;
+
+        try {
+            require $file;
+        }
+        catch (\Exception $ex){
+            ob_end_clean();
+            throw $ex;
+        }
 
         if($return) return ob_get_clean();
         else echo ob_get_clean();
