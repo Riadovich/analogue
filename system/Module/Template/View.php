@@ -1,33 +1,64 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: makhmudov
- * Date: 07.10.2017
- * Time: 17:45
- */
-
 namespace System\Module\Template;
 
 class View
 {
 
-    public function render($file, $vars = [], $return = false)
-    {
-        $file = ROOT_DIR."/".mb_strtolower(ENV)."/View/".$file.".php";
+    public $theme;
 
-        ob_start();
+
+    public function __construct()
+    {
+        $this->theme = new Theme();
+    }
+
+    public function render($templete, $vars = [], $return = false)
+    {
+        $templetePath = $this->getTemplatePath($templete, ENV);
+
+        if(!file_exists($templetePath))
+        {
+
+            throw new \InvalidArgumentException(
+                sprintf('Template "%s" not found in "%s"', $templete, $templetePath)
+            );
+        }
+
+        $this->theme->setData($vars);
         extract($vars);
 
-        try {
-            require $file;
+        ob_start();
+        ob_implicit_flush(0);
+
+        try
+        {
+            require $templetePath;
         }
-        catch (\Exception $ex){
+        catch(\Exception $e)
+        {
             ob_end_clean();
-            throw $ex;
+            throw $e;
         }
 
         if($return) return ob_get_clean();
         else echo ob_get_clean();
+    }
+
+    /**
+     *
+     * В дальнеешем подвергнится рефакторингу
+     *
+     * @param $template
+     * @param null $env
+     * @return string
+     */
+    private function getTemplatePath($template, $env = null)
+    {
+        if($env == 'Cms')
+        {
+            return ROOT_DIR.'/content/themes/default/'.$template.'.php';
+        }
+        return ROOT_DIR."/View/".$template.".php";
     }
 
 }

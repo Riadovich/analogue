@@ -13,7 +13,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        echo "dashboard";
+        $this->view->render("index", ['data_admin'=> 'admin_panel']);
     }
 
 }
