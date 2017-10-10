@@ -8,9 +8,7 @@
 
 namespace Cms\Controller;
 
-use System\Controller;
-
-class IndexController extends Controller
+class IndexController extends CmsController
 {
 
     public function index(){

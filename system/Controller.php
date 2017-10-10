@@ -23,11 +23,14 @@ abstract class Controller
 
     protected $request;
 
+    protected $auth;
+
     public function __construct($di)
     {
         $this->di      = $di;
         $this->db      = $this->di->get("db");
         $this->view    = $this->di->get("view");
         $this->request = $this->di->get("request");
+        $this->auth    = $this->di->get("auth");
     }
 }

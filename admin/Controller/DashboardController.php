@@ -9,11 +9,14 @@ namespace Admin\Controller;
 
 use System\Controller;
 
-class DashboardController extends Controller
+class DashboardController extends AdminController
 {
+
     public function index()
     {
-        $this->view->render("index", ['data_admin'=> 'admin_panel']);
+        $this->view->render("dashboard");
     }
+
+
 
 }
