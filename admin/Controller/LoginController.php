@@ -5,6 +5,7 @@ namespace Admin\Controller;
 use System\Controller;
 use System\Helper\Redirect;
 use System\Helper\Session;
+use System\Module\DataBase\QueryBuilder;
 
 class LoginController extends Controller
 {
@@ -22,15 +23,22 @@ class LoginController extends Controller
         $this->view->render("login");
     }
 
+    //авторизация
     public function auth()
     {
-        $email    = $this->request->post['email'];
-        $password = $this->request->post['password'];
+        $query = $this->load->model("User")->repository->getAdmin($_POST);
 
-        if($email == "admin@mail.ru" && $password == "123"){
-            $this->auth->autorize();
-            Redirect::redirect("/admin/");
+        if (!empty($query)) {
+            $user = $query[0];
+
+            if ($user->role == 'admin') {
+
+                $this->auth->autorize();
+                Redirect::redirect("/admin/login");
+            }
         }
+
+        echo 'Incorrect email or password.';
     }
 
 

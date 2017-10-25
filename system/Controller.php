@@ -25,6 +25,8 @@ abstract class Controller
 
     protected $auth;
 
+    protected $load;
+
     public function __construct($di)
     {
         $this->di      = $di;
@@ -32,5 +34,6 @@ abstract class Controller
         $this->view    = $this->di->get("view");
         $this->request = $this->di->get("request");
         $this->auth    = $this->di->get("auth");
+        $this->load    = $this->di->get("load");
     }
 }

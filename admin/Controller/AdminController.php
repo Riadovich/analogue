@@ -23,4 +23,10 @@ class AdminController extends Controller
             Redirect::redirect("/admin/login");
         }
     }
+
+    public function logout()
+    {
+        $this->auth->unAuthorize();
+        Redirect::redirect("/admin/login");
+    }
 }

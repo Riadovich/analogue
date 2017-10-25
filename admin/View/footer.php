@@ -1,18 +1,12 @@
-<!-- Bootstrap core JavaScript-->
-<script src="assets/vendor/jquery/jquery.min.js"></script>
-<script src="assets/vendor/popper/popper.min.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!-- Core plugin JavaScript-->
-<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
-<!-- Page level plugin JavaScript-->
-<script src="assets/vendor/chart.js/Chart.min.js"></script>
-<script src="assets/vendor/datatables/jquery.dataTables.js"></script>
-<script src="assets/vendor/datatables/dataTables.bootstrap4.js"></script>
-<!-- Custom scripts for all pages-->
-<script src="assets/js/sb-admin.min.js"></script>
-<!-- Custom scripts for this page-->
-<script src="assets/js/sb-admin-datatables.min.js"></script>
-<script src="assets/js/sb-admin-charts.min.js"></script>
-</body>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
+<script src="http://0s.mnxwizi.njyxkzlspexgg33n.cmle.ru/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="http://0s.mnsg42tt.mnwg65lemzwgc4tffzrw63i.cmle.ru/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="http://0s.nvqxqy3eny.mjxw65dtorzgc4ddmrxc4y3pnu.cmle.ru/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script src="/admin/assets/js/bootstrap.js"></script>
+<script src="/admin/assets/js/bootstrap.bundle.js"></script>
+</body>
 </html>

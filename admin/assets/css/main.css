@@ -1,0 +1,15 @@
+.m_tabs_addition{
+    border-left:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-right:1px solid #ddd;
+}
+
+.m_margpad{
+    padding: 10px;
+    margin:10px;
+}
+
+.m_margpad_tb{
+    padding: 10px 0;
+    margin:10px 0;
+}

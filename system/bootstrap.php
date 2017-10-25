@@ -16,6 +16,9 @@ try{
         $serv = new $service($di);
         $serv->init();
     }
+
+    $di->set("model", []);
+
     $system = new \System\System($di);
     $system->run();
 }

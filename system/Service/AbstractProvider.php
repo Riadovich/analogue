@@ -8,6 +8,7 @@ namespace System\Service;
  * @package System\Service
  * Дочерние классы этого класса будут добовлять
  * объекты модулей в объект DI
+ * (Добовляет "любые" объекты в объект DI)
  */
 abstract class AbstractProvider
 {

@@ -1,56 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <title>SB Admin - Start Bootstrap Template</title>
-  <!-- Bootstrap core CSS-->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template-->
-  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- Custom styles for this template-->
-  <link href="assets/css/sb-admin.css" rel="stylesheet">
+    <title>Makhmudov's CMS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Makhmudov Magomed Riadovich">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://0s.nvqxqy3eny.mjxw65dtorzgc4ddmrxc4y3pnu.cmle.ru/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="/admin/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/admin/assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="/admin/assets/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="/admin/assets/css/main.css">
+    <script src="asset/js/jquery-3.2.1.min.js"></script>
+    <style>
+        .parent {display: table; width: 100%; height: 100vh}
+        .child {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
 </head>
-
-<body class="bg-dark">
-  <div class="container">
-    <div class="card card-login mx-auto mt-5">
-      <div class="card-header">Login</div>
-      <div class="card-body">
-        <form name="login" action="/admin/auth" method="post">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email" name="email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password" name="password">
-          </div>
-          <div class="form-group">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Remember Password</label>
-            </div>
-          </div>
-            <input type="submit" class="btn btn-primary btn-block" value="login">
-        </form>
-        <div class="text-center">
-          <a class="d-block small mt-3" href="register.html">Register an Account</a>
-          <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
+<body>
+<div class="wrapper">
+    <div class="parent">
+        <div class="child">
+            <form style="width: 300px; margin: auto;" action="/admin/auth" method="post">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Check me out
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-      </div>
     </div>
-  </div>
-  <!-- Bootstrap core JavaScript-->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/popper/popper.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <!-- Core plugin JavaScript-->
-  <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
-</body>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
+<script src="http://0s.mnxwizi.njyxkzlspexgg33n.cmle.ru/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="http://0s.mnsg42tt.mnwg65lemzwgc4tffzrw63i.cmle.ru/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="http://0s.nvqxqy3eny.mjxw65dtorzgc4ddmrxc4y3pnu.cmle.ru/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script src="asset/js/bootstrap.js"></script>
+<script src="asset/js/bootstrap.bundle.js"></script>
+</body>
 </html>
